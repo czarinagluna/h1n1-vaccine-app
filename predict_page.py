@@ -4,6 +4,10 @@ import pickle
 import numpy as np
 from PIL import Image
 
+import sklearn
+from sklearn.preprocessing import LabelEncoder
+from sklearn.ensemble import RandomForestClassifier
+
 def load_model():
     with open('vaccination_clf.pkl', 'rb') as file:
         data = pickle.load(file)
